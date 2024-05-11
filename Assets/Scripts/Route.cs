@@ -26,6 +26,12 @@ public class Route : MonoBehaviour
 
     }
 
+    private void OnEnable()
+    {
+        if(ship==null)
+        ship = this.transform.GetChild(0).GetComponent<Ship>();
+    }
+
     private void OnParkLinkedToLineHandler(Route route, List<Vector3> points)
     {
         if (route == this)

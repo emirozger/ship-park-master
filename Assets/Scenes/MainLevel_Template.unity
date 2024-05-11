@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1794811, g: 0.22473395, b: 0.30636245, a: 1}
+  m_IndirectSpecularColor: {r: 0.17948122, g: 0.22473428, b: 0.30636293, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6296,19 +6296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelsData:
-  - levelPrefab: {fileID: 1783094280061529101, guid: bac693176cceb4b0baa6ca7bec8462bf,
-      type: 3}
-    startPosition: {fileID: 0}
-  - levelPrefab: {fileID: 1783094280061529101, guid: bac693176cceb4b0baa6ca7bec8462bf,
-      type: 3}
-    startPosition: {fileID: 0}
-  - levelPrefab: {fileID: 1783094280061529101, guid: bac693176cceb4b0baa6ca7bec8462bf,
-      type: 3}
-    startPosition: {fileID: 0}
-  - levelPrefab: {fileID: 1783094280061529101, guid: bac693176cceb4b0baa6ca7bec8462bf,
-      type: 3}
-    startPosition: {fileID: 0}
-  - levelPrefab: {fileID: 1783094280061529101, guid: bac693176cceb4b0baa6ca7bec8462bf,
+  - levelPrefab: {fileID: 1783094280061529101, guid: beecfa74787764ef6a7f1fee437b33b4,
       type: 3}
     startPosition: {fileID: 0}
   currentLevelIndex: 0
@@ -12936,7 +12924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   userInput: {fileID: 2050299866127653922}
-  interactableLayer: 6
+  interactableLayerIndex: 0
 --- !u!1 &2050299866929605543
 GameObject:
   m_ObjectHideFlags: 0
@@ -14355,7 +14343,6 @@ MonoBehaviour:
   - {fileID: 6411531169301311744}
   - {fileID: 8601022480366177133}
   hasActivated: 0
-  levelsObj: {fileID: 0}
 --- !u!1 &4223141300358639795
 GameObject:
   m_ObjectHideFlags: 0
@@ -16238,6 +16225,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipID: 0
+  hasBuyedShip: 0
+  shipCost: 0
 --- !u!33 &7214307664991609887
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17054,12 +17043,14 @@ MonoBehaviour:
   portOpenBackButton: {fileID: 125449127}
   gameplayUI: {fileID: 1999589637}
   winCanvas: {fileID: 1792761211}
+  notEnoughCostPanel: {fileID: 0}
   fadePanel: {fileID: 7316077800266204292}
   avaiableLineFill: {fileID: 7316077801195524820}
   avaiableLineHolder: {fileID: 7316077801214133353}
   avaiableLineCanvasGroup: {fileID: 7316077801214133349}
+  timerFillImage: {fileID: 0}
+  shipCostText: {fileID: 0}
   linesDrawer: {fileID: 2050299866929605542}
-  ships: []
   portShip: {fileID: 0}
   portOpened: 0
 --- !u!114 &7316077799650508497
@@ -19084,6 +19075,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipID: 1
+  hasBuyedShip: 0
+  shipCost: 0
 --- !u!65 &7950565773512130236
 BoxCollider:
   m_ObjectHideFlags: 0
